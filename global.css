@@ -1,0 +1,86 @@
+/* Sprite Lab starter: the page is set up. Write your code under each YOUR CODE comment. */
+
+/* Colors and spacing are set for you. You do not need to change them. */
+:root {
+  --primary-color: #1D4E89;
+  --secondary-color: #1A787C;
+  --contrast-color: #E8B873;
+  --triadic-color: #A62A61;
+  --extra-color: #F5F2EA;
+
+  --radius: 1rem;
+  --space-small: 0.5rem;
+  --space: 1rem;
+  --space-big: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--primary-color);
+  background: var(--extra-color);
+}
+
+.site-header,
+.site-footer {
+  padding: var(--space) var(--space);
+  text-align: center;
+  color: var(--extra-color);
+  background: var(--primary-color);
+}
+
+.page {
+  display: grid;
+  gap: var(--space-big);
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: var(--space-big) var(--space);
+}
+
+.lab {
+  padding: var(--space);
+  border-radius: var(--radius);
+  background: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Lab 1: The Film Strip ---------- */
+/* YOUR CODE: Lab 1, the window and the spin */
+
+
+/* ---------- Lab 2: Byte Walks ---------- */
+.robot-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space);
+}
+
+/* Each window is a button, so the keyboard can reach it */
+.robot-window {
+  padding: 0;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--extra-color);
+  cursor: pointer;
+}
+
+/* YOUR CODE: Lab 2, the windows and four directions */
+
+
+/* ---------- Lab 3: The Stage ---------- */
+.stage {
+  height: 160px;
+  padding-top: var(--space-small);
+  border-radius: var(--radius);
+  background: linear-gradient(var(--secondary-color) 78%, var(--primary-color) 78%);
+}
+
+/* YOUR CODE: Lab 3, a window on the stage, then walk across */
+
+
+/* YOUR CODE: Be kind to motion (at the very bottom) */
