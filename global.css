@@ -183,14 +183,52 @@ body {
 }
 
 /* ---------- Lab 3: The Stage ---------- */
+
 .stage {
+  position: relative;
   height: 160px;
   padding-top: var(--space-small);
   border-radius: var(--radius);
   background: linear-gradient(var(--secondary-color) 78%, var(--primary-color) 78%);
+  overflow: hidden;
 }
 
 /* YOUR CODE: Lab 3, a window on the stage, then walk across */
 
+@keyframes cross {
+  from {
+    left: -128px;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.walker {
+  position: absolute;
+  top: 8px;
+  left: -128px;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  animation: cross 6s linear infinite;
+}
+
+.stage-window {
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+}
+
+.stage-window .robot-sheet {
+  display: block;
+  animation: 0.8s steps(8) infinite walk-right;
+}
 
 /* YOUR CODE: Be kind to motion (at the very bottom) */
+
+.stage:hover .walker,
+.stage:hover .robot-sheet {
+  animation-play-state: paused;
+}
